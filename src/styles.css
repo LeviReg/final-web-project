@@ -1,0 +1,11 @@
+@import '../src/vendor/semantic.min.css';
+
+body 
+{
+    background-color:#007676;
+}
+
+i
+{
+    color: black;
+}

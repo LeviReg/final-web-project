@@ -1,0 +1,31 @@
+<div>
+  <div class="ui four column doubling stackable grid container">
+    <div class="right floated left aligned five wide column">
+      <div class="ui search">
+        <input class="prompt"  type="text"  placeholder="Search Business..."
+          #search>
+        <button class="ui right labeled icon button" (click)="searchFor(search.value)" type="submit" onclick="clear()">
+          <i class="right arrow icon"></i>
+          Search
+        </button>
+      </div>
+    </div>
+    <br>
+    
+  </div>
+  <div class="ui raised segment">
+
+      <div *ngIf="searchData">
+        <h4>Name:  {{searchData.candidates[0].name}} </h4>
+        <h4>Address:  {{searchData.candidates[0].formatted_address}} </h4>
+        <h4>Rating:  {{searchData.candidates[0].rating}} </h4>
+        <h4>Location:  {{searchData.candidates[0].html_attributions}} </h4>
+        <div class="ui buttons">
+            <button class="ui button">Reset</button>
+            <div class="or"></div>
+            <button class="ui positive button">Save</button>
+          </div>
+      </div>
+
+  </div>
+</div>
