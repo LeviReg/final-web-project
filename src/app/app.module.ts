@@ -8,13 +8,16 @@ import { SearchItemComponent } from './search-item/search-item.component';
 import { PlacesServiceService } from './service/places-service.service';
 import {FormsModule} from '@angular/forms';
 import {SuiModule} from 'ng2-semantic-ui';
+import {AngularFireModule} from 'angularfire2';
+import { PopupInfoComponent } from './popup-info/popup-info.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemListComponent,
-    SearchItemComponent
+    SearchItemComponent,
+    PopupInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -26,4 +29,6 @@ import {SuiModule} from 'ng2-semantic-ui';
   providers: [PlacesServiceService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }

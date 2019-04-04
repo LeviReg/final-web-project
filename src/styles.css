@@ -2,10 +2,49 @@
 
 body 
 {
-    background-color:#007676;
+    background-color:#007676 !important;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 i
 {
     color: black;
 }
+.ui.raised.segment{
+
+    margin: 40px;
+}
+.ui.buttons
+{
+    align-self: center;
+}
+img{
+    float: right;
+    max-width:100%;
+    max-height:100%;
+    max-height: 15rem;
+    margin-right: 25rem;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+div{
+    padding: 0.04rem;
+}
+.ui.inverted.segment{
+    text-align: center;
+    width: 50%;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.image.container{
+    display: inline-block;
+    justify-content: right;
+    padding: 1rem;
+}
+
+
