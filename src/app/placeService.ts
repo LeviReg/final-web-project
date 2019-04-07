@@ -1,6 +1,6 @@
 export interface ICandidate
 {
-    candidates: IPlace[]
+    candidates?: IPlace[]
 }
 
 export interface IPlace
@@ -9,7 +9,8 @@ export interface IPlace
     name: string,
     opening_hours: IOpening_Hours[],
     photos: IPhotos[],
-    rating: number
+    rating: number,
+    myNotes: string
 }
 
 export interface IOpening_Hours

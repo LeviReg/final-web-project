@@ -19,17 +19,18 @@ i
     align-self: center;
 }
 img{
-    float: right;
     max-width:100%;
     max-height:100%;
     max-height: 15rem;
     margin-right: 25rem;
     align-items: center;
     justify-content: center;
+    float: right;
     overflow: auto;
 }
 div{
     padding: 0.04rem;
+    overflow: auto;
 }
 .ui.inverted.segment{
     text-align: center;
@@ -45,6 +46,20 @@ div{
     display: inline-block;
     justify-content: right;
     padding: 1rem;
+}
+.ui.inverted.menu{
+    width: 50%;
+    align-self: center;
+    
+}
+.wrapper{
+    text-align: center;
+}
+i{
+    justify-self: center;
+}
+.item{
+    text-align: right;
 }
 
 

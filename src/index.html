@@ -1,18 +1,14 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Day Planner</title>
   <base href="/">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+  <link rel="stylesheet" src="/semantic/src/semantic.min.js">
   <link rel="stylesheet" src="/src/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/Compass-icon-large-copy.png">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <base href="/">
 </head>
 
 <body>
@@ -22,16 +18,22 @@
     <i class="circular compass icon"></i>
     Search
   </h2>
-  <div class="container">
+  <div class="container" id="list">
     <div class="ui inverted segment">
       <p>Welcome to your personal day planner! Search for a business type and add it to your todo list.</p>
     </div>
   </div>
 
-  <app-search></app-search>
   <app-root></app-root>
+  
+  <app-item-list></app-item-list>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <footer>
+   <div>
+     <br><br>
+   </div>
+ </footer> 
 </body>
 
 </html>

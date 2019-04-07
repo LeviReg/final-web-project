@@ -2,30 +2,26 @@
   <div class="ui four column doubling stackable grid container">
     <div class="right floated left aligned five wide column">
       <div class="ui search">
-        <input class="prompt" type="text" placeholder="Search Business..." #search>
-        <button class="ui right labeled icon button" (click)="searchFor(search.value)"  type="submit">
+        <input class="prompt" type="text" id="clear" placeholder="Search Business..." #search>
+        <button class="ui right labeled icon button" (click)="searchFor(search.value)" type="submit">
           <i class="right arrow icon"></i>
           Search
         </button>
       </div>
     </div>
     <br>
-
   </div>
-  <div class="ui raised segment">
+  <div class="ui raised segment" id="clear">
     <div *ngIf="data">
-      <img class="ui medium bordered image" src={{imageURL}} alt="Place">
-      <h4>Name: {{data.candidates[0].name}} </h4>
-      <h4>Address: {{data.candidates[0].formatted_address}} </h4>
-      <h4>Rating: {{data.candidates[0].rating}} </h4>
+      <img id="clear" class="ui medium bordered image" src={{imageURL}} alt="Place">
+      <h4 id="clear">Name: {{data.candidates[0].name}} </h4>
+      <h4 id="clear">Address: {{data.candidates[0].formatted_address}} </h4>
+      <h4 id="clear">Rating: {{data.candidates[0].rating}} </h4>
 
       <div class="ui buttons">
-        <button class="ui button">Cancel</button>
-        <div class="or"> </div>
-        <button class="ui positive button">Save</button>
-
+        <button class="ui button" (click)="ClearSearch()">Cancel</button>
+        <button class="ui positive button" (click)="UploaData()">Save</button>
       </div>
     </div>
-
   </div>
 </div>

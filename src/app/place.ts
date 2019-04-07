@@ -9,8 +9,9 @@ export class Place implements ICandidate
     opening_hours: IOpening_Hours[];
     photos: IPhotos[];
     rating: number;
+    myNotes:string;
 
-    constructor(candidate:IPlace[], formatted_address:string,name:string,opening_hours:IOpening_Hours[],photos:IPhotos[],rating:number)
+    constructor(candidate:IPlace[], formatted_address:string,name:string,opening_hours:IOpening_Hours[],photos:IPhotos[],rating:number, myNotes:string)
     {
         this.candidate = candidate;
         this.formatted_address = formatted_address;
@@ -18,6 +19,7 @@ export class Place implements ICandidate
         this.opening_hours = opening_hours;
         this.photos = photos;
         this.rating = rating;
+        this.myNotes = myNotes;
     }
 
 }

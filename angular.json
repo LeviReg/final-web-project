@@ -27,7 +27,8 @@
               "./src/vendor/semantic.min.css"
             ],
             "scripts": [
-              "../final-project-app/node_modules/jquery/dist/jquery.min.js"]
+              "node_modules/jquery/dist/jquery.js",
+            "./semantic/src/semantic.min.js"]
           },
           "configurations": {
             "production": {
